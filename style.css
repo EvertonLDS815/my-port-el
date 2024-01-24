@@ -19,10 +19,23 @@ body {
     z-index: 5;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, .3);
 }
+.header-port img {
+    width: 200px;
+}
+.header-port i {
+    color: black;
+    font-size: 40px;
+    cursor: pointer;
+    display: none;
+}
 
+.header-port nav {
+    display: flex;
+    gap: 8px;
+}
 .header-port nav a {
     text-decoration: none;
-    color: #0038ab;
+    color: #333;
     font-size: 1.1rem;
 }
 .el-about {
@@ -57,8 +70,8 @@ body {
     height: 3rem;
 }
 .about-2 img {
-    width: 250px;
-    border-radius: 0.4rem;
+    width: 300px;
+    border-radius: 2rem;
     transition: 400ms;
 }
 .about-2 img:hover {
@@ -108,6 +121,14 @@ body {
     }
     .about-1 {
         width: 80vw;
+    }
+}
+@media(max-width: 450px) {
+    .header-port nav {
+        display: none;
+    }
+    .header-port i {
+        display: block;
     }
 }
 
