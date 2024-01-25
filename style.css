@@ -113,7 +113,18 @@ body {
     margin-top: 15px;
 }
 
-@media(max-width: 620px) {
+.el-projects > h2 {
+    color: #ddd;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.container h2 {
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+@media(max-width: 750px) {
     
     .el-about {
         flex-direction: column;
@@ -121,6 +132,7 @@ body {
     }
     .about-1 {
         width: 80vw;
+        padding: 0;
     }
 }
 @media(max-width: 450px) {
@@ -130,16 +142,31 @@ body {
     .header-port i {
         display: block;
     }
+    .about-1 h3 {
+        font-size: 1.2rem;
+    }
+    .content:hover {
+        transform: none;
+    }
 }
 
 @media(max-width: 390px) {
+    .header-port {
+        height: 65px;
+    }
     .el-about {
-        padding: 100px 20px 20px;
+        padding: 100px 13px 20px;
     }
     .tech {
         justify-content: center;
     }
     .about-1 img {
         height: 2.3rem;
+    }
+    .about-2 {
+        width: 85vw;
+    }
+    .about-2 img {
+        width: 100%;
     }
 }
