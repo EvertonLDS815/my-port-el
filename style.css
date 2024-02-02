@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     outline: none;
+    text-decoration: none;
 }
 body {
     font-family: 'Poppins', sans-serif;
@@ -65,17 +66,22 @@ body {
     color: gray;
 }
 .home-1 p {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
-.home a {
+.home-1 > a {
     background: linear-gradient(180deg, #2181bb, #162165);
     color: white;
     text-decoration: none;
     padding: 11px 14px;
     border-radius: 1.5rem;
 }
-.home a:hover {
+.home-1 > a:hover {
     opacity: 0.9;
+}
+.media a i {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
 }
 .tech {
     display: flex;
