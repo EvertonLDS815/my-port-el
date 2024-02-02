@@ -16,29 +16,47 @@
             <img src="./imgs/ecolog.png" />
             
             <nav>
-                <a class="links" href="#">Home</a>
-                <a class="links" href="#">Sites</a>
-                <a class="links" href="#">Contato</a>
+                <button class="links" href="#" onclick="onScrollPage('#home')">Home</button>
+                <button id="about" class="links" onclick="onScrollPage('.about h2')">Sobre</button>
+                <button id="sites" class="links" onclick="onScrollPage('.el-projects h2')">Sites</button>
             </nav>
             <i class='bx bx-menu menu-icon'></i>
         </header>
-        <section class="el-about">
-            <div class="about-1">
+        <section class="home">
+            <div class="home-1">
                 <h1>Everton Lino</h1>
                 <h3>Desenvolvedor Full-Stack</h3>
-                <p>Olá, me chamo Everton, sou Desenvolvedor Full-Stack. Tenho habilidades abrangentes no desenvolvimento web, demostro proficiência tanto no Front end quanto no Back end. </p>
+                <p>Olá, me chamo Everton, sou Desenvolvedor Full-Stack. Tenho habilidades abrangentes no desenvolvimento web.</p>
+                <a download href="./pdfs/cv-fs-everton-lino.pdf">Download CV</a>
                 <!-- <p>Olá, me chamo Everton, sou Desenvolvedor Full-Stack. Tenho habilidades abrangentes no desenvolvimento web, demostro proficiência tanto no Front end quanto no Back end. Meus conhecimentos permitiram que eu me aprofundasse em diversas áreas, compreendendo o processo de criação de aplicações web. </p> -->
-                <div class="tech">
+                <!-- <div class="tech">
                     <img src="./imgs//react.svg" />
                     <img src="./imgs/node.svg" />
                     <img src="./imgs/javascript.svg" />
                     <img src="./imgs/typescript.svg" />
                     <img src="./imgs/postgres.svg" />
                     <img src="./imgs/mongo.svg" />
-                </div>
+                </div> -->
             </div>
-            <div class="about-2">
+            <div class="home-2">
                 <img src="https://media.licdn.com/dms/image/D4D03AQF0U6u7IvAwLA/profile-displayphoto-shrink_800_800/0/1669218617170?e=1711584000&v=beta&t=ztDshl4bW0tHZ2qV3LJoBa30pcFOqXYsTeAw9Oli4n8" alt="">
+            </div>
+            
+        </section>
+        <section class="about">
+            <h2>Sobre mim</h2>
+            <div class="ab-align">
+                <p>Tenho habilidades em tecnologia do desenvolvimento web. Concluí alguns cursos de programação e aprendi muitas coisas.
+                    Meus conhecimentos permitiram que eu me aprofundasse em diversas áreas, compreendendo o processo de criação de servidores, api, CRUD e banco de dados.
+                </p>
+                <div class="tech">
+                    <img src="./imgs/react.svg" />
+                    <img src="./imgs/node.svg" />
+                    <img src="./imgs/javascript.svg" />
+                    <img src="./imgs/typescript.svg" />
+                    <img src="./imgs/postgres.svg" />
+                    <img src="./imgs/mongo.svg" />
+                </div>
             </div>
             
         </section>

@@ -1,10 +1,10 @@
 const button = document.querySelector(".button");
 const menu = document.querySelector(".menu-icon");
 const nav = document.querySelector(".header-port nav");
-const url = 'https://node-name.vercel.app';
+const url = "https://node-name.vercel.app";
 
-add()
-function add() {
+addAPI();
+function addAPI() {
     
     fetch(url)
     .then(response =>{
@@ -12,15 +12,15 @@ function add() {
     })
     .then((data) => {
 
-        montarBlog(data);
+        showSites(data);
             
         })
         .catch((err => {
             console.log(err)
-        }))
+        }));
 }
 
-function montarBlog(lista) {
+function showSites(lista) {
     let html = '';
 
     for (const i in lista) {
@@ -30,20 +30,26 @@ function montarBlog(lista) {
                     <p>${lista[i].description}</p>
                 </div>`
     }
-    document.querySelector(".container").innerHTML = html
-}
-function closeMenu() {
-    nav.style.width = "0";
-    // overlay.style.display = "none";
+    document.querySelector(".container").innerHTML = html;
 }
 
 function menuToggle() {
-    if(nav.style.width === "170px") {
-        closeMenu();
-    } else {
-        nav.style.width = "170px";
-        // overlay.style.display = "block";
-    }
+    nav.classList.toggle('nav-width');
 }
 
-menu.addEventListener('click', menuToggle)
+menu.addEventListener('click', menuToggle);
+
+
+function onScrollPage(id) {
+    const header = document.querySelector('.header-port').getBoundingClientRect().height + 15;
+    const tag = document.querySelector(id);
+    const position = tag?.getBoundingClientRect().top + window.scrollY - header;
+
+    // Rola até o elemento
+    window.scrollTo({
+        behavior: 'smooth',
+        top: id === '#home'? 0 : position
+    });
+
+    menuToggle()
+}
