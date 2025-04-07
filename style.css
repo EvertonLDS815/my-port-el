@@ -92,7 +92,7 @@ body {
     height: 3rem;
 }
 .home-2 img {
-    width: 300px;
+    width: 320px;
     border-radius: 2rem;
     transition: 400ms;
 }
@@ -194,6 +194,7 @@ body {
     
     .home {
         flex-direction: column;
+        justify-content: space-between;
         align-items: center;
         gap: 2.6rem;
     }
